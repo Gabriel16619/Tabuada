@@ -1,0 +1,41 @@
+package model;
+
+public class Tabuada {
+
+	private double multiplicando;
+	private double mimimoMultiplicador;
+	private double maximoMultiplicador;
+	
+	
+	
+	public void setMultiplicando(double multiplicando) {
+		this.multiplicando = multiplicando;
+	}
+	
+	public double getMultiplicando() {
+		return multiplicando;
+	}
+	public void setMinimoMultiplicador(double minimoMultiplicador) {
+		this.mimimoMultiplicador = minimoMultiplicador;
+}
+	public double getMinimoMultiplicando() {
+		return mimimoMultiplicador;
+	}
+	public void setMaximoMultiplicador(double maximoMultiplicador) {
+		this.maximoMultiplicador = maximoMultiplicador;
+}
+	public double getMaximoMultiplicador() {
+		return maximoMultiplicador;
+	}
+	public void mostrarTabuada() {
+		
+		int contador = 0;
+		while (true) {
+			double multiplicando;
+			double mimimoMultiplicador;
+			double maximoMultiplicador;
+			
+			contador = contador + 1;
+		}
+	}
+}
