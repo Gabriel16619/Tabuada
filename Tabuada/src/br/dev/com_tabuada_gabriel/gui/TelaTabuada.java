@@ -31,9 +31,55 @@ public class TelaTabuada {
 		tela.setTitle("Tabuada");
 		tela.setSize(400, 700);
 		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		tela.setLayout(null);
 		
+		//componentes da tela 
+		//Multiplicando
+		labelMultiplicando = new JLabel();
+		labelMultiplicando.setText("Multiplicando:");
+		labelMultiplicando.setBounds(20, 20, 150, 30);
+		
+		textMultiplicando = new JTextField();
+		textMultiplicando.setText(null);
+		textMultiplicando.setBounds(170, 20, 40, 30);
+		
+		//MinMuntiplicador
+		labelMinMultiplicador = new JLabel();
+		labelMinMultiplicador.setText("Min.Multiplicador:");
+		labelMinMultiplicador.setBounds(20, 55, 150, 30);
+		
+		textMinMultiplicador = new JTextField();
+		textMinMultiplicador.setText(null);
+		textMinMultiplicador.setBounds(170, 60, 40, 30);
+		
+		//max.Multiplicador
+		labelMaxMultiplicador = new JLabel();
+		labelMaxMultiplicador.setText("Max.Multiplicador");
+		labelMaxMultiplicador.setBounds(20, 90, 150, 30);
+		
+		textMaxMultiplicador = new JTextField();
+		textMaxMultiplicador.setText(null);
+		textMaxMultiplicador.setBounds(170, 100, 40, 30);
+		
+		//buttons
+		buttonCalcular = new JButton();
+		buttonCalcular.setBounds(20, 140, 100, 40);
+		buttonCalcular.setText("Calcular");
+		
+		//bagui para add os textos 
+		tela.getContentPane().add(labelMultiplicando);	
+		tela.getContentPane().add(textMultiplicando);
+		
+		tela.getContentPane().add(labelMinMultiplicador);
+		tela.getContentPane().add(textMinMultiplicador);
+		
+		tela.getContentPane().add(labelMaxMultiplicador);
+		tela.getContentPane().add(textMaxMultiplicador);
+		
+		tela.getContentPane().add(buttonCalcular);
 		//ultima linha desse metodo.
 		tela.setVisible(true);
+		
 		
 	}
 	
