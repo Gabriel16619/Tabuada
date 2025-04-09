@@ -28,17 +28,19 @@ public class Tabuada {
 	}
 
 	public double getMaximoMultiplicador() {
-		return maximoMultiplicador;
+	return maximoMultiplicador;
 	}
 
 	public void mostrarTabuada() {
 		
-		while (mimimoMultiplicador <= maximoMultiplicador) {
-			double produto = multiplicando * minimoMultiplicador;
-			System.out.println(multiplicando + " X " + minimoMultiplicador + "=" + produto);
-			minimoMultiplicador = minimoMultiplicador + 1;
+	double contador = minimoMultiplicador;
+	while (contador <= maximoMultiplicador) {
+		double produto = multiplicando * contador;
+		System.out.println(multiplicando + "x" + contador + "=" + produto);
+		contador = contador + 1;
 		
 			
 		}
+	System.out.println("Fim");
 	}
 }

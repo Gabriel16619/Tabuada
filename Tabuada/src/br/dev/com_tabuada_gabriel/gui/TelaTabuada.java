@@ -1,0 +1,44 @@
+package br.dev.com_tabuada_gabriel.gui;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+
+public class TelaTabuada {
+	
+	private JLabel labelMultiplicando;
+	private JLabel labelMinMultiplicador;
+	private JLabel labelMaxMultiplicador;
+	private JTextField textMultiplicando;
+	private JTextField textMinMultiplicador;
+	private JTextField textMaxMultiplicador;
+	private JButton buttonCalcular;
+	private JScrollPane scrollTabuada;
+	private JList listTabuada;
+	
+	private void exibirTabuada() {
+		
+	}
+	private void limparTabuada() {
+		
+	}
+	public void criarTelaTabuada() {
+		
+		JFrame tela = new JFrame();
+		tela.setTitle("Tabuada");
+		tela.setSize(400, 700);
+		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//ultima linha desse metodo.
+		tela.setVisible(true);
+		
+	}
+	
+	
+}
+
+
+ 
