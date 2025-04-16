@@ -31,7 +31,7 @@ public class Tabuada {
 	return maximoMultiplicador;
 	}
 
-	public void mostrarTabuada() {
+	public  void mostrarTabuada() {
 		
 	double contador = minimoMultiplicador;
 	while (contador <= maximoMultiplicador) {

@@ -10,7 +10,6 @@ public class Main {
 		TelaTabuada tela = new TelaTabuada();
 		tela.criarTelaTabuada();
 		
-	
 	}
 	
 
