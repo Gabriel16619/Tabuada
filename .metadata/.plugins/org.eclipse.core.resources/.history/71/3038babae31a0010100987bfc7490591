@@ -1,0 +1,142 @@
+package br.dev.com_tabuada_gabriel.gui;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+
+public class TelaTabuada {
+	
+	private JLabel labelMultiplicando;
+	private JLabel labelMinMultiplicador;
+	private JLabel labelMaxMultiplicador;
+	private JTextField textMultiplicando;
+	private JTextField textMinMultiplicador;
+	private JTextField textMaxMultiplicador;
+	private JButton buttonCalcular;
+	private JButton buttonLimpar;
+	private JScrollPane scrollTabuada;
+	private JList listTabuada;
+	
+	private void exibirTabuada() {
+		
+	}
+	private void limparTabuada() {
+		
+	}
+	public void criarTelaTabuada() {
+		
+		JFrame tela = new JFrame();
+		tela.setTitle("Tabuada");
+		tela.setSize(400, 700);
+		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		tela.setLayout(null);
+		tela.setResizable(false);
+		
+		//componentes da tela 
+		//Multiplicando
+		labelMultiplicando = new JLabel();
+		labelMultiplicando.setText("Multiplicando:");
+		labelMultiplicando.setBounds(20, 20, 150, 30);
+		
+		textMultiplicando = new JTextField();
+		textMultiplicando.setText(null);
+		textMultiplicando.setBounds(170, 20, 40, 30);
+		
+		//MinMuntiplicador
+		labelMinMultiplicador = new JLabel();
+		labelMinMultiplicador.setText("Min.Multiplicador:");
+		labelMinMultiplicador.setBounds(20, 55, 150, 30);
+		
+		textMinMultiplicador = new JTextField();
+		textMinMultiplicador.setText(null);
+		textMinMultiplicador.setBounds(170, 60, 40, 30);
+		
+		//max.Multiplicador
+		labelMaxMultiplicador = new JLabel();
+		labelMaxMultiplicador.setText("Max.Multiplicador:");
+		labelMaxMultiplicador.setBounds(20, 90, 150, 30);
+		
+		textMaxMultiplicador = new JTextField();
+		textMaxMultiplicador.setText(null);
+		textMaxMultiplicador.setBounds(170, 100, 40, 30);
+		
+		//buttons
+		buttonCalcular = new JButton();
+		buttonCalcular.setBounds(20, 140, 100, 40);
+		buttonCalcular.setText("Calcular");
+		
+		buttonLimpar = new JButton();
+		buttonLimpar.setText("Limpar");
+		buttonLimpar.setBounds(150, 140, 100, 40);
+		
+		//criar um objeto Scroll
+		JLabel teste = new JLabel();
+		teste.setBounds(0, 0, 280, 400);
+		teste.setText("<html>I know you're somewhere out there, somewhere far away\r\n<br>"
+				+ "I want you back, I want you back\r\n"
+				+ "My neighbors think I'm crazy, but they don't understand\r\n"
+				+ "You're all I had, you're all I had\r\n"
+				+ "At night, when the stars light up my room\r\n"
+				+ "I sit by myself\r\n"
+				+ "Talking to the moon\r\n"
+				+ "Tryna get to you\r\n"
+				+ "In hopes you're on the other side talking to me too\r\n"
+				+ "Or am I a fool who sits alone talking to the moon?\r\n"
+				+ "Oh\r\n"
+				+ "I'm feelin' like I'm famous, the talk of the town\r\n"
+				+ "They say I've gone mad, yeah, I've gone mad\r\n"
+				+ "But they don't know what I know, 'cause when the sun goes down\r\n"
+				+ "Someone's talking back, yeah, they're talking back, oh\r\n"
+				+ "At night, when the stars light up my room\r\n"
+				+ "I sit by myself\r\n"
+				+ "Talking to the moon\r\n"
+				+ "Tryna get to you\r\n"
+				+ "In hopes you're on the other side talking to me too\r\n"
+				+ "Or am I a fool who sits alone talking to the moon?\r\n"
+				+ "Ah, ah, ah\r\n"
+				+ "Do you ever hear me calling?\r\n"
+				+ "(Ah) oh-oh-oh (ah), oh-oh-oh (ah)\r\n"
+				+ "'Cause every night I'm talking to the moon\r\n"
+				+ "Still tryna get to you\r\n"
+				+ "In hopes you're on the other side talking to me too\r\n"
+				+ "Or am I a fool who sits alone talking to the moon?\r\n"
+				+ "Oh\r\n"
+				+ "I know you're somewhere out there, somewhere far away\r\n"
+				+ "");
+		
+		scrollTabuada = new JScrollPane(teste);
+		scrollTabuada.setBounds(20, 240, 280, 400);
+		
+		
+		
+		
+		
+		//bagui para add os textos 
+		tela.getContentPane().add(labelMultiplicando);	
+		tela.getContentPane().add(textMultiplicando);
+		
+		tela.getContentPane().add(labelMinMultiplicador);
+		tela.getContentPane().add(textMinMultiplicador);
+		
+		tela.getContentPane().add(labelMaxMultiplicador);
+		tela.getContentPane().add(textMaxMultiplicador);
+		
+		tela.getContentPane().add(buttonCalcular);
+		tela.getContentPane().add(buttonLimpar);
+		
+		tela.getContentPane().add(scrollTabuada);
+		
+		//ultima linha desse metodo.
+		tela.setVisible(true);
+		
+		
+	}
+	
+	
+}
+
+
+ 
