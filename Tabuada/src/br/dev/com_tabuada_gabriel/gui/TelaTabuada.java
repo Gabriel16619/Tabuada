@@ -12,7 +12,6 @@ import javax.swing.JTextField;
 
 import model.Tabuada;
 
-
 public class TelaTabuada {
 
 	private JLabel labelMultiplicando;
@@ -117,15 +116,16 @@ public class TelaTabuada {
 
 				String minMultiplicando = textMinMultiplicador.getText();
 				double minMultiplicandoDouble = Double.valueOf(minMultiplicando);
-				tabuada.setMultiplicando(minMultiplicandoDouble);
+				tabuada.setMinimoMultiplicador(minMultiplicandoDouble);
 
 				String maxMultiplicando = textMaxMultiplicador.getText();
 				double maxMultiplicandoDouble = Double.valueOf(maxMultiplicando);
-				tabuada.setMultiplicando(maxMultiplicandoDouble);
-				
-			
+				tabuada.setMaximoMultiplicador(maxMultiplicandoDouble);
 
-			
+				// componentes para mostrar os resultados na tela, sem ser no console
+				String[] tabuadaResultado = tabuada.mostrarTabuada();
+				listTabuada.setListData(tabuadaResultado);
+
 			}
 		});
 
@@ -136,6 +136,8 @@ public class TelaTabuada {
 				textMultiplicando.setText("");
 				textMinMultiplicador.setText("");
 				textMaxMultiplicador.setText("");
+
+				listTabuada.setListData(new String[0]);
 
 				textMultiplicando.requestFocus();
 
